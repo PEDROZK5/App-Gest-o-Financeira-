@@ -18,15 +18,19 @@ export default function LoginScreen({ navigation }) {
 
         <Text style={styles.logo}>💰</Text>
 
-        <Text style={styles.title}>Gestão Financeira</Text>
+        <Text style={styles.title}>
+          Gestão Financeira
+        </Text>
 
         <Text style={styles.subtitle}>
-          Controle suas receitas, despesas, investimentos e metas em um só lugar.
+          Controle suas receitas, despesas, investimentos e metas em um único lugar.
         </Text>
       </View>
 
       <View style={styles.card}>
-        <Text style={styles.welcome}>Bem-vindo 👋</Text>
+        <Text style={styles.welcome}>
+          Bem-vindo 👋
+        </Text>
 
         <TextInput
           placeholder="Digite seu e-mail"
@@ -51,7 +55,9 @@ export default function LoginScreen({ navigation }) {
           style={styles.loginButton}
           onPress={() => navigation.navigate("Dashboard")}
         >
-          <Text style={styles.loginText}>Entrar</Text>
+          <Text style={styles.loginText}>
+            Entrar
+          </Text>
         </TouchableOpacity>
 
         <View style={styles.separatorContainer}>
@@ -60,7 +66,10 @@ export default function LoginScreen({ navigation }) {
           <View style={styles.line} />
         </View>
 
-        <TouchableOpacity style={styles.registerButton}>
+        <TouchableOpacity
+          style={styles.registerButton}
+          onPress={() => navigation.navigate("Cadastro")}
+        >
           <Text style={styles.registerButtonText}>
             Criar nova conta
           </Text>
@@ -124,13 +133,6 @@ const styles = StyleSheet.create({
   logo: {
     fontSize: 90,
     marginBottom: 10,
-
-    textShadowColor: "rgba(0,0,0,0.20)",
-    textShadowOffset: {
-      width: 0,
-      height: 8,
-    },
-    textShadowRadius: 12,
   },
 
   title: {
@@ -139,13 +141,6 @@ const styles = StyleSheet.create({
     fontWeight: "900",
     letterSpacing: -1,
     textAlign: "center",
-
-    textShadowColor: "rgba(0,0,0,0.20)",
-    textShadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    textShadowRadius: 10,
   },
 
   subtitle: {
@@ -160,25 +155,11 @@ const styles = StyleSheet.create({
 
   card: {
     flex: 1,
-
     backgroundColor: "#FFFFFF",
-
     borderTopLeftRadius: 45,
     borderTopRightRadius: 45,
-
     marginTop: -40,
-
     padding: 35,
-
-    shadowColor: "#001F5B",
-    shadowOffset: {
-      width: 0,
-      height: -4,
-    },
-    shadowOpacity: 0.18,
-    shadowRadius: 25,
-
-    elevation: 20,
   },
 
   welcome: {
@@ -190,25 +171,12 @@ const styles = StyleSheet.create({
 
   input: {
     backgroundColor: "#F8FAFC",
-
     borderWidth: 1,
     borderColor: "#E2E8F0",
-
     borderRadius: 18,
-
     padding: 18,
-
     marginBottom: 16,
-
     fontSize: 16,
-
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.05,
-    shadowRadius: 6,
   },
 
   forgotPassword: {
@@ -220,29 +188,15 @@ const styles = StyleSheet.create({
 
   loginButton: {
     backgroundColor: "#2563EB",
-
     padding: 20,
-
     borderRadius: 18,
-
     alignItems: "center",
-
-    shadowColor: "#2563EB",
-    shadowOffset: {
-      width: 0,
-      height: 12,
-    },
-    shadowOpacity: 0.35,
-    shadowRadius: 18,
-
-    elevation: 12,
   },
 
   loginText: {
     color: "#FFFFFF",
     fontWeight: "900",
     fontSize: 17,
-    letterSpacing: 0.3,
   },
 
   separatorContainer: {
@@ -266,11 +220,8 @@ const styles = StyleSheet.create({
   registerButton: {
     borderWidth: 2,
     borderColor: "#2563EB",
-
     padding: 18,
-
     borderRadius: 18,
-
     alignItems: "center",
   },
 
@@ -287,3 +238,4 @@ const styles = StyleSheet.create({
     fontSize: 12,
   },
 });
+
